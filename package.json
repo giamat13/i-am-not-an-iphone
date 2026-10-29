@@ -1,0 +1,22 @@
+{
+  "name": "i-am-not-an-iphone",
+  "version": "0.1.0",
+  "description": "An \"I'm not an iPhone\" checkbox widget that checks whether the visitor is on an iPhone. Runs entirely in the browser.",
+  "main": "not-an-iphone.js",
+  "files": [
+    "not-an-iphone.js",
+    "LICENSE",
+    "README.md"
+  ],
+  "scripts": {
+    "test": "node --test not-an-iphone.test.js"
+  },
+  "keywords": [
+    "iphone",
+    "widget",
+    "checkbox",
+    "user-agent"
+  ],
+  "author": "GIAMAT13",
+  "license": "MIT"
+}

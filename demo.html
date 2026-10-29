@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>אני לא אייפון - דמו</title>
+  <style>
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      background: #f3f4f6;
+      font-family: system-ui, "Segoe UI", Arial, sans-serif;
+      color: #1f2937;
+    }
+    main { padding: 16px; text-align: center; }
+    h1 { font-size: 20px; margin: 0 0 16px; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>דוגמה לשילוב</h1>
+    <div data-not-an-iphone></div>
+  </main>
+  <script src="not-an-iphone.js"></script>
+  <script>
+    // Demo only: ?click clicks the widget once, so the result can be screenshotted without a pointer.
+    if (location.search.indexOf('click') !== -1) {
+      window.addEventListener('load', function () {
+        var host = document.querySelector('[data-not-an-iphone]');
+        setTimeout(function () {
+          host.shadowRoot.querySelector('.box').click();
+        }, 300);
+      });
+    }
+  </script>
+</body>
+</html>
